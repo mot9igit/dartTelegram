@@ -182,7 +182,7 @@ Ext.extend(dartTelegram.grid.Levels, MODx.grid.Grid, {
     },
 
     getFields: function () {
-        return ['id', 'name', 'chats','description', 'active', 'properties', 'actions'];
+        return ['id', 'name', 'chats', 'token', 'description', 'active', 'properties', 'actions'];
     },
 
     getColumns: function () {
@@ -199,6 +199,11 @@ Ext.extend(dartTelegram.grid.Levels, MODx.grid.Grid, {
         }, {
             header: _('darttelegram_level_chats'),
             dataIndex: 'chats',
+            sortable: true,
+            width: 200,
+        }, {
+            header: _('darttelegram_level_token'),
+            dataIndex: 'token',
             sortable: true,
             width: 200,
         }, {

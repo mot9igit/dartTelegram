@@ -98,6 +98,12 @@ Ext.extend(dartTelegram.window.UpdateLevel, MODx.Window, {
             id: config.id + '-chats',
             anchor: '99%'
         }, {
+            xtype: 'textfield',
+            fieldLabel: _('darttelegram_level_token'),
+            name: 'token',
+            id: config.id + '-token',
+            anchor: '99%'
+        }, {
             xtype: 'textarea',
             fieldLabel: _('darttelegram_level_description'),
             name: 'description',
